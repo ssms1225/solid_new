@@ -11,7 +11,7 @@ class FreeMan(object):
     def __init__(self, position):
         self.position = position
 
-    def walk_North(self, dist):
+    def walk_north(self, dist):
         self.position[1] += dist
 
     def walk_East(self, dist):
@@ -30,7 +30,7 @@ def main():
     print ("The prisoner trying to walk to north by 10 and east by -3.")
     
     try:
-        prisoner.walk_North(10)
+        prisoner.walk_north(10)
         prisoner.walk_East(-3)
     except:
         pass
