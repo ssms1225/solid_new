@@ -56,7 +56,7 @@ def main():
     email.setSender('qmal')
     email.set_receiver('james')
     email.set_content('Hello, there!')
-    print email
+    print (email)
 
 if __name__ == '__main__':
     main()
