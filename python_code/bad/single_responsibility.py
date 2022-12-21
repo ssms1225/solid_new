@@ -27,7 +27,7 @@ class Email(IEmail):
         self.__receiver = None
         self.__content = None
 
-    def setSender(self, sender):
+    def set_sender(self, sender):
         if self.protocol == 'IM':
             self.__sender = ''.join(["I'm ", sender])
         else:
@@ -53,7 +53,7 @@ class Email(IEmail):
 
 def main():
     email = Email('IM', 'MyML')
-    email.setSender('qmal')
+    email.set_sender('qmal')
     email.set_receiver('james')
     email.set_content('Hello, there!')
     print (email)
